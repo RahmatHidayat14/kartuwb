@@ -1,0 +1,308 @@
+# Save the enhanced HTML content to a new file
+enhanced_html = '''<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karang Taruna Wira Bhakti</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --primary: #2C3E50;
+            --secondary: #3498DB;
+            --accent: #E74C3C;
+            --text: #333;
+            --light: #ECF0F1;
+            --success: #27AE60;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .nav {
+            background: var(--secondary);
+            padding: 1rem 0;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .nav a:hover {
+            background: var(--primary);
+        }
+
+        .section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+
+        .org-structure {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .org-card {
+            background: var(--light);
+            padding: 1rem;
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .news-card {
+            background: var(--light);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .donation-box {
+            background: var(--success);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+        }
+
+        .footer {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Karang Taruna Wira Bhakti</h1>
+            <p>Membangun Generasi Muda yang Kreatif, Inovatif, dan Peduli</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#struktur">Struktur</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#berita">Berita</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="sambutan" class="section">
+            <h2 class="section-title">Sambutan Ketua</h2>
+            <div class="content">
+                <p>Assalamualaikum Wr. Wb.</p>
+                <p>Selamat datang di website resmi Karang Taruna Wira Bhakti. Kami berkomitmen untuk terus berkontribusi dalam pembangunan masyarakat dan pengembangan potensi pemuda di wilayah kami.</p>
+                <p>Wassalamualaikum Wr. Wb.</p>
+                <p class="signature">Ketua Karang Taruna<br>Wira Bhakti</p>
+            </div>
+        </section>
+
+        <section id="struktur" class="section">
+            <h2 class="section-title">Struktur Organisasi</h2>
+            <div class="org-structure">
+                <div class="org-card">
+                    <h3>Ketua</h3>
+                    <p>Ahmad Fadillah</p>
+                </div>
+                <div class="org-card">
+                    <h3>Wakil Ketua</h3>
+                    <p>Siti Nurhaliza</p>
+                </div>
+                <div class="org-card">
+                    <h3>Sekretaris</h3>
+                    <p>Budi Santoso</p>
+                </div>
+                <div class="org-card">
+                    <h3>Bendahara</h3>
+                    <p>Dewi Kartika</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="berita" class="section">
+            <h2 class="section-title">Berita Terkini</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <h3>Pelatihan Wirausaha Muda</h3>
+                    <p>Program pelatihan wirausaha untuk pemuda telah berhasil dilaksanakan dengan peserta dari berbagai wilayah.</p>
+                    <a href="#" class="btn">Baca Selengkapnya</a>
+                </article>
+                <article class="news-card">
+                    <h3>Bakti Sosial Covid-19</h3>
+                    <p>Karang Taruna melaksanakan bakti sosial pembagian masker dan hand sanitizer kepada masyarakat.</p>
+                    <a href="#" class="btn">Baca Selengkapnya</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="agenda" class="section">
+            <h2 class="section-title">Agenda Mendatang</h2>
+            <ul>
+                <li>15 November 2024 - Workshop Digital Marketing</li>
+                <li>20 November 2024 - Turnamen Futsal Antar RT</li>
+                <li>25 November 2024 - Pelatihan Hidroponik</li>
+                <li>1 Desember 2024 - Bakti Sosial Akhir Tahun</li>
+            </ul>
+        </section>
+
+        <section id="produk" class="section">
+            <h2 class="section-title">Produk UMKM Binaan</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <h3>Kerajinan Tangan</h3>
+                    <p>Berbagai produk kerajinan tangan hasil karya pemuda karang taruna.</p>
+                    <a href="#" class="btn">Lihat Produk</a>
+                </div>
+                <div class="news-card">
+                    <h3>Produk Kuliner</h3>
+                    <p>Aneka makanan dan minuman olahan UMKM binaan karang taruna.</p>
+                    <a href="#" class="btn">Lihat Produk</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="donasi" class="section">
+            <h2 class="section-title">Donasi</h2>
+            <div class="donation-box">
+                <h3>Dukung Program Kami</h3>
+                <p>Bantu kami mewujudkan program-program pemberdayaan pemuda dengan berdonasi:</p>
+                <p>Bank BRI: 1234-5678-9012-3456</p>
+                <p>A.n. Karang Taruna Wira Bhakti</p>
+                <a href="#" class="btn">Cara Berdonasi</a>
+            </div>
+        </section>
+
+        <section id="kontak" class="section">
+            <h2 class="section-title">Kontak Kami</h2>
+            <div class="contact-grid">
+                <div>
+                    <h3>Alamat</h3>
+                    <p>Jl. Pemuda No. 123</p>
+                    <p>Kelurahan Sejahtera</p>
+                    <p>Kecamatan Makmur</p>
+                    <p>Kota Jakarta</p>
+                </div>
+                <div>
+                    <h3>Kontak</h3>
+                    <p>Telp: (021) 1234-5678</p>
+                    <p>WA: +62 812-3456-7890</p>
+                    <p>Email: info@karangtarunawirabhakti.org</p>
+                </div>
+                <div>
+                    <h3>Media Sosial</h3>
+                    <p>Instagram: @karangtaruna_wb</p>
+                    <p>Facebook: Karang Taruna Wira Bhakti</p>
+                    <p>Twitter: @KarangTarunaWB</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Karang Taruna Wira Bhakti. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>'''
+
+# Save the enhanced HTML to a new file
+with open('karang_taruna_enhanced.html', 'w', encoding='utf-8') as f:
+    f.write(enhanced_html)
+
+print("Enhanced HTML file has been created as 'karang_taruna_enhanced.html'")
